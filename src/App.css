@@ -3,11 +3,57 @@ html, body {
   padding: 0;
 }
 
-.a4 {
+* {
+  box-sizing: border-box;
+}
+
+.Page {
   width: 210mm;
-  height: 297mm;
+  height: 296mm;
 }
 
 @page {
   margin: 0;
-} 
+}
+
+.InfoBox {
+  width: 70mm;
+  height: 200mm;
+  background-color: #FA6900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10mm 6mm;
+}
+
+.Avatar {
+  width: 70%;
+  border-radius: 50%;
+  margin-bottom: 8mm; 
+}
+
+.InfoList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  width: 100%;
+}
+
+.InfoList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3mm;
+}
+
+.InfoList i {
+  margin-right: 6mm;
+}
+
+.ItemText {
+  display: flex;
+  flex-direction: column;
+}
