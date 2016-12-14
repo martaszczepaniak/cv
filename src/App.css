@@ -10,6 +10,7 @@ html, body {
 .Page {
   width: 210mm;
   height: 296mm;
+  display: flex;
 }
 
 @page {
@@ -56,4 +57,19 @@ html, body {
 .ItemText {
   display: flex;
   flex-direction: column;
+}
+
+.MainContent {
+  width: 140mm;
+  height: 200mm;
+  display: flex;
+  flex-direction: column;
+}
+
+.EducationBox {
+
+}
+
+.ExperienceBox {
+
 }

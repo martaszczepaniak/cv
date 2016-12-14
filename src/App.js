@@ -20,6 +20,11 @@ class App extends Component {
           <InfoList items={items}>
           </InfoList>
         </InfoBox>
+        <div className="MainContent">
+          <h4>TITLE</h4>
+          <div className="EducationBox"></div>
+          <div className="ExperienceBox"></div>
+        </div>
       </Page>
     );
   }
