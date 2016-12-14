@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import avatar from './a2.png';
 import Page from './Page'
+import InfoBox from './InfoBox'
+import InfoList from './InfoList'
 
 class App extends Component {
   render() {
@@ -15,27 +16,10 @@ class App extends Component {
 
     return (
       <Page>
-        <div className="InfoBox">
-          <img src={avatar} className="Avatar" />
-          <ul className="InfoList">
-            {
-              items.map((item) => {
-                return (
-                  <li>
-                    <i>{item.icon}</i>
-                    <div className="ItemText">
-                      {
-                        item.text.map((el) => {
-                          return (<span>{el}</span>)
-                        })
-                      }
-                    </div>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </div>
+        <InfoBox>
+          <InfoList items={items}>
+          </InfoList>
+        </InfoBox>
       </Page>
     );
   }
