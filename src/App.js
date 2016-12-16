@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import Page from './Page'
-import InfoBox from './InfoBox'
-import InfoList from './InfoList'
-import MainBox from './MainBox'
+import Page from './Page';
+import InfoBox from './InfoBox';
+import InfoList from './InfoList';
+import MainBox from './MainBox';
+import EdExpBox from './EdExpBox';
 
 class App extends Component {
   render() {
-    let items = [
+    let personalInfo = [
       { icon: "perm_identity", text: ["Name"] },
       { icon: "location_on", text: ["Address", "Code and City"] },
       { icon: "email", text: ["email"] },
@@ -15,52 +16,27 @@ class App extends Component {
       { icon: "language", text: ["github.com/", "username"] },
     ]
 
+    let educationInfo = [
+      { duration: "2000 - 3000", location: "Warsaw" },
+      { duration: "1000 - 5000", location: "Berlin" },
+      { duration: "1800 - 2500", location: "Budapest" },
+    ]
+
+    let experienceInfo = [
+      { duration: "2000 - 3000", location: "Warsaw" },
+      { duration: "1000 - 5000", location: "Berlin" },
+      { duration: "1800 - 2500", location: "Budapest" },
+    ]
+
     return (
       <Page>
         <InfoBox>
-          <InfoList items={items}>
-          </InfoList>
+          <InfoList items={personalInfo} />
         </InfoBox>
         <MainBox>
-          <h4>CV TITLE</h4>
-          <div className="TableTitle">EDUCATION</div>
-          <div className="EdExpBox">
-            <div className="DurationLocationRow">
-              <div className="Duration">
-                <div className="Date">1234 - 1234</div>
-              </div>
-              <div className="Place">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.</div>
-            </div>
-            <div className="DurationLocationRow">
-              <div className="Duration">
-                <div className="Date">1234 - 1234</div>
-              </div>
-              <div className="Location">Lisbon</div>
-            </div>
-            <div className="DurationLocationRow">
-              <div className="Duration">
-                <div className="Date">1234 - 1234</div>
-              </div>
-              <div className="Location">Lisbon</div>
-            </div>
-          </div>
-          <div className="TableTitle">EXPERIENCE</div>
-          <div className="EdExpBox">
-            <div className="DurationLocationRow">
-              <div className="Duration">
-                <div className="Date">1234 - 1234</div>
-              </div>
-              <div className="Location">Lisbon</div>
-            </div>
-            <div className="DurationLocationRow">
-              <div className="Duration">
-                <div className="Date">1234 - 1234</div>
-              </div>
-              <div className="Location">Lisbon</div>
-            </div>
-          </div>
+          <h1>CV TITLE</h1>
+          <EdExpBox info={educationInfo} title="EDUCATION" />
+          <EdExpBox info={experienceInfo} title="EXPERIENCE" />
         </MainBox>
       </Page>
     );

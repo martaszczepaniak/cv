@@ -1,16 +1,10 @@
 import React from 'react';
 import InfoListItem from './InfoListItem'
 
-function InfoList(props) {
+function InfoList({items}) {
   return (
     <ul className="InfoList">
-      {
-        props.items.map((item) => {
-          return (
-            <InfoListItem item={item} />
-          )
-        })
-      }
+      {items.map(item => <InfoListItem item={item} />)}
     </ul>
   );
 }

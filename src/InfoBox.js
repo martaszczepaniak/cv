@@ -1,11 +1,11 @@
 import React from 'react';
 import avatar from './a2.png';
 
-function InfoBox(props) {
+function InfoBox({children}) {
   return (
     <div className="InfoBox">
       <img src={avatar} className="Avatar" />
-      {props.children}
+      {children}
     </div>
   )
 }
