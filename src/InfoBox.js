@@ -1,10 +1,10 @@
 import React from 'react';
-import avatar from './a2.png';
+import avatar from './avatar.png';
 
 function InfoBox({children}) {
   return (
     <div className="InfoBox">
-      <img src={avatar} className="Avatar" />
+      <img src={avatar} className="Avatar" alt="Avatar" />
       {children}
     </div>
   )

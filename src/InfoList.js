@@ -4,7 +4,7 @@ import InfoListItem from './InfoListItem'
 function InfoList({items}) {
   return (
     <ul className="InfoList">
-      {items.map(item => <InfoListItem item={item} />)}
+      {items.map((item, index) => <InfoListItem key={index} item={item} />)}
     </ul>
   );
 }

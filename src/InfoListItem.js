@@ -6,7 +6,7 @@ function InfoListItem({item: {icon, text}}) {
     <li>
       <Icon name={icon} />
       <div className="ItemText">
-        {text.map(el => <span>{el}</span>)}
+        {text.map((el, index) => <span key={index}>{el}</span>)}
       </div>
     </li>
   );

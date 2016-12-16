@@ -49,7 +49,7 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 3mm;
+  margin: 2mm;
 }
 
 .InfoList i {
@@ -108,6 +108,6 @@ h1 {
   padding: 1mm 5mm;
 }
 
-.Location {
-  width: 95mm;
+.Place {
+  margin: 0;
 }
