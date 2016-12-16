@@ -4,7 +4,7 @@ function InfoListItem(props) {
 
   return (
     <li>
-      <i>{props.item.icon}</i>
+      <i className="info-icon small material-icons">{props.item.icon}</i>
       <div className="ItemText">
         {
           props.item.text.map((el) => {
