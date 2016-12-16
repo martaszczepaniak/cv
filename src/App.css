@@ -59,7 +59,7 @@ html, body {
   flex-direction: column;
 }
 
-.MainContent {
+.MainBox {
   width: 140mm;
   height: 200mm;
   display: flex;
@@ -67,9 +67,19 @@ html, body {
 }
 
 .EducationBox {
-
+  display: flex;
 }
 
 .ExperienceBox {
+  display: flex;
+}
 
+.Duration {
+  display: flex;
+  flex-direction: column;
+}
+
+.Location {
+  display: flex;
+  flex-direction: column;
 }

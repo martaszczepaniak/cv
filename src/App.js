@@ -20,10 +20,31 @@ class App extends Component {
           <InfoList items={items}>
           </InfoList>
         </InfoBox>
-        <div className="MainContent">
-          <h4>TITLE</h4>
-          <div className="EducationBox"></div>
-          <div className="ExperienceBox"></div>
+        <div className="MainBox">
+          <h4>CV TITLE</h4>
+          <div className="EducationBoxTitle">EDUCATION</div>
+          <div className="EducationBox">
+            <div className="Duration">
+              <div className="Date">1234-1234</div>
+              <div className="Date">1234-1234</div>
+              <div className="Date">1234-1234</div>
+            </div>
+            <div className="Location">
+              <div className="Place">Lisbon</div>
+              <div className="Place">Praha</div>
+              <div className="Place">NY</div></div>
+          </div>
+          <div className="ExperienceBoxTitle">EXPERIENCE</div>
+          <div className="ExperienceBox">
+            <div className="Duration">
+              <div className="Date">1234-1234</div>
+              <div className="Date">1234-1234</div>
+            </div>
+            <div className="Location">
+              <div className="Place">Madrid</div>
+              <div className="Place">Paris</div>
+            </div>
+          </div>
         </div>
       </Page>
     );
