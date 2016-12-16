@@ -84,7 +84,8 @@ html, body {
 }
 
 h4 {
-  letter-spacing: 1mm; 
+  letter-spacing: 1mm;
+  margin-bottom: 10mm;
 }
 
 .TableTitle {
@@ -93,15 +94,18 @@ h4 {
   letter-spacing: 1px;
 }
 
+.Duration {
+  margin-right: 5mm;
+}
+
 .Date {
+  width: 32mm;
   color:#1f9a9f;
   border: 1px solid #1f9a9f;
   text-align: center;
   padding: 1mm 5mm;
-  margin-right: 5mm;
-  width: 30mm;
 }
 
-.Place {
+.Location {
   width: 95mm;
 }

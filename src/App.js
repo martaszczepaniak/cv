@@ -26,27 +26,39 @@ class App extends Component {
           <div className="TableTitle">EDUCATION</div>
           <div className="EdExpBox">
             <div className="DurationLocationRow">
-              <div className="Date">1234-1234</div>
-              <div className="Place">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div className="Duration">
+                <div className="Date">1234 - 1234</div>
+              </div>
+              <div className="Place">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua.</div>
             </div>
             <div className="DurationLocationRow">
-              <div className="Date">1234-1234</div>
-              <div className="Place">Lisbon</div>
+              <div className="Duration">
+                <div className="Date">1234 - 1234</div>
+              </div>
+              <div className="Location">Lisbon</div>
             </div>
             <div className="DurationLocationRow">
-              <div className="Date">1234-1234</div>
-              <div className="Place">Lisbon</div>
+              <div className="Duration">
+                <div className="Date">1234 - 1234</div>
+              </div>
+              <div className="Location">Lisbon</div>
             </div>
           </div>
           <div className="TableTitle">EXPERIENCE</div>
           <div className="EdExpBox">
             <div className="DurationLocationRow">
-              <div className="Date">1234-1234</div>
-              <div className="Place">Lisbon</div>
+              <div className="Duration">
+                <div className="Date">1234 - 1234</div>
+              </div>
+              <div className="Location">Lisbon</div>
             </div>
             <div className="DurationLocationRow">
-              <div className="Date">1234-1234</div>
-              <div className="Place">Lisbon</div>
+              <div className="Duration">
+                <div className="Date">1234 - 1234</div>
+              </div>
+              <div className="Location">Lisbon</div>
             </div>
           </div>
         </MainBox>
