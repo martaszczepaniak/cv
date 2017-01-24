@@ -11,6 +11,7 @@ html, body {
   width: 210mm;
   height: 296mm;
   display: flex;
+  flex-direction: column;
   font-family: 'Raleway',sans-serif;
 }
 
@@ -18,15 +19,18 @@ html, body {
   margin: 0;
 }
 
+.Upper {
+  display: flex;
+}
+
 .InfoBox {
   width: 70mm;
-  height: 200mm;
+  height: 180mm;
   background-color: #FA6900;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10mm 6mm;
-  font-weight: 700;
 }
 
 .Avatar {
@@ -64,11 +68,11 @@ html, body {
 
 .MainBox {
   width: 140mm;
-  height: 200mm;
+  height: 185mm;
   display: flex;
   flex-direction: column;
   color: #06074D;
-  padding: 10mm 10mm;
+  padding: 8mm 8mm 0 8mm;
 }
 
 .EdExpBox {
@@ -84,7 +88,7 @@ html, body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 38px;
   letter-spacing: 1mm;
   margin-bottom: 5mm;
 }
@@ -105,9 +109,41 @@ h1 {
   color:#1f9a9f;
   border: 1px solid #1f9a9f;
   text-align: center;
-  padding: 1mm 5mm;
+  padding: 1mm 1mm;
 }
 
 .Place {
   margin: 0;
+  font-size: 13px;
+}
+
+.LanguagesBox {
+  color: #06074D;
+  padding-left: 10mm;
+  font-size: 13px;
+}
+
+.SkillsBox {
+  color: #06074D;
+  padding-left: 10mm;
+  padding-right: 10mm;
+  font-size: 13px;
+}
+
+.LanguageList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.ProgList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.ProgList li {
+  flex: 0 1 25%;
+  padding-right: 5mm;
+  padding-bottom: 5mm;
 }
